@@ -1,0 +1,41 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.question_page{
+  padding:0 10rpx 0 10rpx;
+  align-content: center;
+  text-align: center;
+}
+.question_title_1002{
+  margin:20rpx 10rpx 10rpx 10rpx;
+  font-size:40rpx;
+  color:black;
+  text-align: left;
+}
+.question_content_1001{
+  font-size:25rpx;
+  color:black;
+  margin:5rpx 0 5rpx 0;
+}
+.question_content_1004{
+  font-style: bold;
+}
+.question_theory_1005{
+  background: rgba(153,204,255, 0.1);
+  color:black;
+  margin:5rpx 0 5rpx 0;
+}
+.question_bold_1003{
+  font-style: bold;
+}
+.gap{
+  height: 20rpx;
+  background-color: grey;
+}

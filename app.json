@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/lesson/lesson_index",
+    "pages/lesson/questions",    
+    "pages/questions/blank",
+    "pages/questions/options",
+    "pages/questions/switch",
+    "pages/questions/dialog",
+    "pages/test/test",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Demo2",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "orange",
+    "onReachBottomDistance":"20px"
+  },
+  "tabBar": {
+    "color":"red",
+    "list": [{
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "pages/img/3.jpg",
+      "selectedIconPath": "pages/img/3.jpg"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "查看",
+      "iconPath": "pages/img/3.jpg",
+      "selectedIconPath": "pages/img/3.jpg"
+    }],
+    "postion":"bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+}

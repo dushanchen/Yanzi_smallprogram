@@ -1,0 +1,62 @@
+/** 修改默认的navigator点击态 **/
+.body{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  /* align-items:center;/*垂直居中 */
+  /* justify-content: center;/*水平居中 */
+  filter:alpha(opacity=50);  
+  -moz-opacity:0.5;  
+  -khtml-opacity: 0.5;  
+  opacity: 0.5;  
+}
+.cancel-button {
+  color:white;
+  float:right;
+  margin:15rpx 20rpx 0 0;
+}
+.block{
+  margin:0 0 10px 20px
+}
+.title{
+  font-size: 30px;
+  font-family: '宋体';
+  color:white;
+}
+.second-title{
+  font-size: 25px;
+  font-family: '宋体';
+  color:white;
+}
+.content{
+  font-size:15px;
+  font-family: '宋体';
+  color:white;
+}
+.content-left{
+  float: left;
+  position:fixed;
+  width:30%;
+  height:700rpx;
+  justify-content: center;
+  display:flex;
+  flex-direction:column;
+}
+.content-right{
+  float:right;
+  width:70%;
+  height: 700rpx;
+  border-radius: 2%;
+  background-color:white; 
+  overflow-wrap: break-word;
+  overflow-y:auto; 
+  -webkit-overflow-scrolling: touch;
+}
+.third-title{
+  margin:40rpx 0 20rpx 40rpx;
+  font-size:40rpx;
+  color:black;
+  
+}

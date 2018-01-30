@@ -1,0 +1,65 @@
+<!--1001：正文；
+    1002：标题；
+    1003：加粗；
+    1004：前竖线；
+    1005：原理；
+    5001：填空  -->
+<!--选择题页  -->
+<view class="question_page">
+<!--问题图片  -->
+  <view>
+    <view wx:for="{{questionImages}}">
+      <image src="{{item.image}}"></image>
+    </view>
+  </view>
+  <!--问题正文  -->
+  <view wx:for="{{questionTexts}}">
+    <view wx:if="{{item.type==1002}}" class="question_title_1002">
+      {{item.text}}
+    </view>
+    <view wx:if="{{item.type==1005}}" class="question_theory_1005">
+      {{item.text}}
+    </view>
+    <text wx:if="{{item.type==1001}}" class="question_content_1001">
+      {{item.text}}
+    </text>
+    <text wx:if="{{item.type==1003}}" class="question_content_1001 question_content_1003">
+      {{item.text}}
+    </text>
+  </view>
+  <view class="gap"></view>
+  <!--选择答案  -->
+  <view wx:for="{{answers}}">
+    <view hidden="true">{{item.brief}}</view>
+    <view id="{{item.id}}" data-correctId="{{item.correctId}}">{{item.text}}</view>
+  </view>
+  <view class="gap"></view>
+  <!--答案分析  -->
+  <view  class="question_title_1002">
+     答案分析：
+    </view>
+  <view wx:for="{{analysisTexts}}">
+    <text wx:if="{{item.type==1001}}" class="question_content_1001">
+      {{item.text}}
+    </text>
+    <text wx:if="{{item.type==1004}}" class="question_content_1001 question_content_1004">
+      {{item.text}}
+    </text>
+  </view>
+<!--答案分析  -->
+<view wx:for="{{analysisExtText}}">
+    <text wx:if="{{item.type==1001}}" class="question_content_1001">
+      {{item.text}}
+    </text>
+    <text wx:if="{{item.type==1004}}" class="question_content_1001 question_content_1004">
+      {{item.text}}
+    </text>
+  </view>
+<!--答案分析图片  -->
+  <view wx:for="{{analysisImages}}">
+    <image src="{{item.image}}"></image>
+  </view>  
+  <view>
+    <button bindtap='getNextPage'>下一节</button>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<view class="body" style="background:url('{{image_url}}')">
+  <view>
+    <icon type="cancel" class="cancel-button"/>
+  </view>
+  <view class="block title">
+    {{title}}
+  </view>
+  <view class="block">
+    <view class='content'>
+      {{brief}}
+    </view>
+  </view>
+  <view class="block">
+    <view class='content-left'>
+      <view class='second-title'>{{correctPercent}}
+      </view>
+      <view class='content'>准确率</view>
+      <view class='second-title'>{{exp}}
+      </view><view></view>
+      <view class='content'>经验值</view>
+    </view>
+    <view class='content-right'>
+      <view wx:for='{{content}}'>
+        <view class='third-title'>
+        {{item}}</view>
+      </view>
+    </view>
+  </view>
+  <view style="text-align:center">
+  <button type="default" size='mini' plain='true' bindtap="getQuestion" hover-class=''> {{isComplete}} </button>
+  </view>
+  
+</view>
