@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/questions/summery",
     "pages/lesson/lesson_index",
     "pages/lesson/questions",    
     "pages/questions/blank",

@@ -1,0 +1,8 @@
+<!--知识回顾  -->
+<view>
+  <image src="{{image}}" ></image>
+  <view wx:for="{{summaries}}">
+    <view>{{item.title}}</view>
+    <view>{{item.content}}</view>
+  </view>
+</view>

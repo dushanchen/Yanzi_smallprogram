@@ -59,6 +59,8 @@ Page({
             lessonId:data.lessonPrimer.lessonId
           });
         }
+        var app = getApp();
+        app.globalData.summery = data.lessonSummery;
       }
     })
   }
